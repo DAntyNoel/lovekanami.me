@@ -56,6 +56,5 @@
   "self-record": "{name} の最高記録. アップロード {attempts} 回<br/>スコア:{score} {time}",
   "no-self-record": "{name} の記録がありません(Or filtered)",
   "no-name-tip": "ヒント：始める前に名前を入力していません",
-
   "home-page": "Kanamiのホーム"
 }
