@@ -190,9 +190,26 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
             id: "end"
         });
         createjs.Sound.registerSound({
-            src: "./static/music/tap.mp3",
-            id: "tap"
+            src: "./static/music/tap/tap1.mp3",
+            id: "tap1"
         });
+        createjs.Sound.registerSound({
+            src: "./static/music/tap/tap2.mp3",
+            id: "tap2"
+        });
+        createjs.Sound.registerSound({
+            src: "./static/music/tap/tap3.mp3",
+            id: "tap3"
+        });
+        createjs.Sound.registerSound({
+            src: "./static/music/tap/tap4.mp3",
+            id: "tap4"
+        });
+        createjs.Sound.registerSound({
+            src: "./static/music/tap/tap5.mp3",
+            id: "tap5"
+        });
+        window.tapSoundIds = ['tap1', 'tap2', 'tap3', 'tap4', 'tap5']
         gameRestart();
     }
 
@@ -363,7 +380,9 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
                 gameStart();
             }
             if (soundMode === 'on') {
-                createjs.Sound.play("tap");
+                const randomIndex = Math.floor(Math.random() * window.tapSoundIds.length);
+                const randomTapSound = window.tapSoundIds[randomIndex];
+                createjs.Sound.play(randomTapSound);
             }
             tar = document.getElementById(p.id);
             tar.className = tar.className.replace(_ttreg, ' tt$1');
@@ -478,11 +497,12 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
             SubmitResults();
         }
 
-        if (cps <= 5) return I18N['text-level-1'];
-        if (cps <= 8) return I18N['text-level-2'];
-        if (cps <= 10)  return I18N['text-level-3'];
-        if (cps <= 15) return I18N['text-level-4'];
-        return I18N['text-level-5'];
+        if (cps <= 4) return I18N['text-level-1'];
+        if (cps <= 6) return I18N['text-level-2'];
+        if (cps <= 8)  return I18N['text-level-3'];
+        if (cps <= 9) return I18N['text-level-4'];
+        if (cps <= 10) return I18N['text-level-5'];
+        return I18N['text-level-6'];
     }
 
     function toStr(obj) {
