@@ -15,10 +15,10 @@
   "ok": "確認",
   "name": "名前",
   "comment": "Msg",
-  "eat-kano": "Eat Kano",
+  "eat-kano": "Eat Kanami",
   "default-dfjk": "デフォルトはDFJK",
   "default-20s": "デフォルトは20秒",
-  "game-title": "Eat Kano",
+  "game-title": "Eat Kanami",
   "game-intro1": "底から始める",
   "game-intro2": "Tap150できる?",
   "record-rank": "ランクを記録するには（特殊文字フィルタリング）",
@@ -30,7 +30,7 @@
   "again": "再び",
   "home": "ホーム",
   "rank": "ランク",
-  "repo": "レポ",
+  "repo": "原作者レポ",
   "text-level-1": "この程度？",
   "text-level-2": "まだまだだよ",
   "text-level-3": "悪くないね",
@@ -43,7 +43,7 @@
   "week-rank": "ランキング[週]",
   "month-rank": "ランキング[月]",
   "all-rank": "ランキング[総計]",
-  "navbar-brand": "EatKano-ランキング",
+  "navbar-brand": "EatKanami-ランキング",
   "daily-ranking": "毎日",
   "weekly-ranking": "毎週",
   "monthly-ranking": "毎月",
@@ -55,5 +55,7 @@
   "no-message": "メッセージなし",
   "self-record": "{name} の最高記録. アップロード {attempts} 回<br/>スコア:{score} {time}",
   "no-self-record": "{name} の記録がありません(Or filtered)",
-  "no-name-tip": "ヒント：始める前に名前を入力していません"
+  "no-name-tip": "ヒント：始める前に名前を入力していません",
+
+  "home-page": "Kanamiのホーム"
 }
