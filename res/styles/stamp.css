@@ -14,8 +14,8 @@
   
 .btn-small {
     padding: 0.4rem 1rem;
-    font-size: 0.9rem;
-    border-radius: 15px;
+    font-size: 1.3rem;
+    border-radius: 10px;
     background: linear-gradient(135deg, #f7c8e0, #b7d5ff);
     border: none;
     cursor: pointer;
